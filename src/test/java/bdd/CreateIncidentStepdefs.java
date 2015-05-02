@@ -1,14 +1,10 @@
 package bdd;
 
 import cucumber.api.java8.En;
-
+import cucumber.api.java.en.Given;
 public class CreateIncidentStepdefs implements En {
-
-	public CreateIncidentStepdefs() {
-		Given("przygotuj cos2", ()-> {});
-	}
 	
-	@cucumber.api.java.en.Given("przygotuj cos")
+	@Given("^przygotuj cos$")
 	public void przygotuj_cos() {
 		
 	}

@@ -1,5 +1,5 @@
 Feature: gggg
 
   Scenario: powinien ggg
-	Given uruchom cos
+	Given przygotuj cos
 
