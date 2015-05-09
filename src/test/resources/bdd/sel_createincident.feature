@@ -1,4 +1,4 @@
-Feature: dodawanie incydentu
+Feature: Web, dodawanie incydentu
 
   Scenario: Powinien wyświetlić błąd niepełnych danych formularza
     Given Aplikacja pod adresem http://localhost:8080/
@@ -13,13 +13,13 @@ Feature: dodawanie incydentu
     Then Błędne pole addressLine
     Then Błędne pole cityLine
 
-#  Scenario: Powinien dodać incydent
-#    Given Aplikacja pod adresem http://localhost:8080/
-#    Given Aktualny język to pl
-#    Given Użytkownik zalogowany icm-admin@icm.com z hasłem !1
-#    Given Sprawdzana strona pod ścieżką /incident/create.html
-#    Given Dane formularza
-#    |type|inc1  |
-#    |description|desc1  |
-#    When Kliknięty przycisk create
-#    Then Pojawi się komunikat poprawnego zapisania
+  Scenario: Powinien dodać incydent
+    Given Aplikacja pod adresem http://localhost:8080/
+    Given Aktualny język to pl
+    Given Użytkownik zalogowany icm-admin@icm.com z hasłem !1
+    Given Sprawdzana strona pod ścieżką /incident/create.html
+    Given Dane formularza
+    |type|inc1  |
+    |description|desc1  |
+    When Kliknięty przycisk create
+    Then Pojawi się komunikat poprawnego zapisania
